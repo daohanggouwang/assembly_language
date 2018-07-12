@@ -32,3 +32,24 @@ Everything up-to-date
 
 可是在网页上查看远程仓库，发现仓库里什么也没有。原因如下：
 新创建的git仓库是完全空的，不包含任何一个分支(branch),因此需要在push代码之前制定一个分支：
+创建一个分支origin:
+ git branch origin
+
+ 
+ 检查分支是否创建成功：
+ master@master-PC MINGW64 /e/assembly_language/assembly_language (master)
+$ git branch
+* master
+  origin
+  
+之后上传代码：
+git add .
+
+git commit -m "6"
+
+git push origin master
+
+最后成功上传
+
+
+  
