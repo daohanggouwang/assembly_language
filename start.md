@@ -1,4 +1,4 @@
-###Windows7连接GitHub仓库
+### Windows7连接GitHub仓库
 创建并连接github仓库：
 在网页上创建一个github仓库
 下载安装git
@@ -57,4 +57,9 @@ git push origin master
 最后成功上传
 
 
-之后关机重启，出现了再次push代码就需要我输入github仓库用户名和密码的情况  
+之后关机重启，出现了再次push代码就需要我输入github仓库用户名和密码的情况，解决办法就是：
+git config --global credential.helper store
+
+参考：https://www.jianshu.com/p/81ae6e77ff47
+
+之后再push代码会要求输入一次用户名和密码，之后用户名和密码就会被记住而不要再次输入。
