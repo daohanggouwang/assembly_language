@@ -57,4 +57,4 @@ git push origin master
 最后成功上传
 
 
-  
+之后关机重启，出现了再次push代码就需要我输入github仓库用户名和密码的情况  
