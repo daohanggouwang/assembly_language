@@ -1,55 +1,59 @@
-´´½¨²¢Á¬½Ógithub²Ö¿â£º
-ÔÚÍøÒ³ÉÏ´´½¨Ò»¸ögithub²Ö¿â
-ÏÂÔØ°²×°git
-ÔÚ±¾µØĞÂ½¨Ò»¸öÎÄ¼ş¼Ğ×÷Îª±¾µØ²Ö¿â
-½«Ô¶³Ì²Ö¿âcloneµ½±¾µØ£ºgit clone [²Ö¿âurl]
-ÅäÖÃsshÃØÔ¿£ºÉú³Éssh£ºssh-keygen -t rsa -C "email"	 ½².pub½áÎ²µÄÎÄ¼şÖĞµÄssh¹«Ô¿Ìí¼Ó½øgithub
-²âÊÔÊÇ·ñÁ¬½Ó³É¹¦£º
-$ ssh -T git@github.com
-The authenticity of host 'github.com (13.250.177.223)' can't be established.
-RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
-Are you sure you want to continue connecting (yes/no)? yes
-Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of know                                                                                                       n hosts.
-Hi daohanggouwang! You've successfully authenticated, but GitHub does not provid                                                                                                       e shell access.
+åˆ›å»ºå¹¶è¿æ¥githubä»“åº“ï¼š
+åœ¨ç½‘é¡µä¸Šåˆ›å»ºä¸€ä¸ªgithubä»“åº“
+ä¸‹è½½å®‰è£…git
+åœ¨æœ¬åœ°æ–°å»ºä¸€ä¸ªæ–‡ä»¶å¤¹ä½œä¸ºæœ¬åœ°ä»“åº“
+å°†è¿œç¨‹ä»“åº“cloneåˆ°æœ¬åœ°ï¼š
+    git clone [ä»“åº“url]
+é…ç½®sshç§˜é’¥ï¼š
+ç”Ÿæˆsshï¼š
+    ssh-keygen -t rsa -C "email"
+å°†.pubç»“å°¾çš„æ–‡ä»¶ä¸­çš„sshå…¬é’¥æ·»åŠ è¿›github
+æµ‹è¯•æ˜¯å¦è¿æ¥æˆåŠŸï¼š
+    $ ssh -T git@github.com
+    The authenticity of host 'github.com (13.250.177.223)' can't be established.
+    RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+    Are you sure you want to continue connecting (yes/no)? yes
+    Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of know   n hosts.
+    Hi daohanggouwang! You've successfully authenticated, but GitHub does not provid   e shell access.
+    
 
-
-ÅäÖÃÓÃ»§ÃûºÍÃÜÂë£º
+é…ç½®ç”¨æˆ·åå’Œå¯†ç ï¼š
 git config --global user.name "daohanggouwang"
 git config --global user.email "gjtxyx@gmail.com"
 
 
-ÉÏ´«´úÂë£º
+ä¸Šä¼ ä»£ç ï¼š
  git commit -m "first"
  
- ¿ªÊ¼ÉÏ´«£¨µÚÒ»´ÎÉÏ´«»áµ¯³öÌáÊ¾ÒªÊäÈëGitHubµÄÓÃ»§ÃûºÍÃÜÂë£©£º
+ å¼€å§‹ä¸Šä¼ ï¼ˆç¬¬ä¸€æ¬¡ä¸Šä¼ ä¼šå¼¹å‡ºæç¤ºè¦è¾“å…¥GitHubçš„ç”¨æˆ·åå’Œå¯†ç ï¼‰ï¼š
  git push origin master
  
- Ö®ºóÌáÊ¾£º
+ ä¹‹åæç¤ºï¼š
  master@master-PC MINGW64 /e/assembly_language/assembly_language (master)
 $ git push origin master
 Everything up-to-date
 
 
-¿ÉÊÇÔÚÍøÒ³ÉÏ²é¿´Ô¶³Ì²Ö¿â£¬·¢ÏÖ²Ö¿âÀïÊ²Ã´Ò²Ã»ÓĞ¡£Ô­ÒòÈçÏÂ£º
-ĞÂ´´½¨µÄgit²Ö¿âÊÇÍêÈ«¿ÕµÄ£¬²»°üº¬ÈÎºÎÒ»¸ö·ÖÖ§(branch),Òò´ËĞèÒªÔÚpush´úÂëÖ®Ç°ÖÆ¶¨Ò»¸ö·ÖÖ§£º
-´´½¨Ò»¸ö·ÖÖ§origin:
+å¯æ˜¯åœ¨ç½‘é¡µä¸ŠæŸ¥çœ‹è¿œç¨‹ä»“åº“ï¼Œå‘ç°ä»“åº“é‡Œä»€ä¹ˆä¹Ÿæ²¡æœ‰ã€‚åŸå› å¦‚ä¸‹ï¼š
+æ–°åˆ›å»ºçš„gitä»“åº“æ˜¯å®Œå…¨ç©ºçš„ï¼Œä¸åŒ…å«ä»»ä½•ä¸€ä¸ªåˆ†æ”¯(branch),å› æ­¤éœ€è¦åœ¨pushä»£ç ä¹‹å‰åˆ¶å®šä¸€ä¸ªåˆ†æ”¯ï¼š
+åˆ›å»ºä¸€ä¸ªåˆ†æ”¯origin:
  git branch origin
 
  
- ¼ì²é·ÖÖ§ÊÇ·ñ´´½¨³É¹¦£º
+ æ£€æŸ¥åˆ†æ”¯æ˜¯å¦åˆ›å»ºæˆåŠŸï¼š
  master@master-PC MINGW64 /e/assembly_language/assembly_language (master)
 $ git branch
 * master
   origin
   
-Ö®ºóÉÏ´«´úÂë£º
+ä¹‹åä¸Šä¼ ä»£ç ï¼š
 git add .
 
 git commit -m "6"
 
 git push origin master
 
-×îºó³É¹¦ÉÏ´«
+æœ€åæˆåŠŸä¸Šä¼ 
 
 
   
