@@ -50,5 +50,22 @@ MASM32是一个汇编开发工具包。
 	link
 
 如下图所示代表安装成功：
-ml_and_link.png
+
+20180712_01.png
+
+除了使用MASM32也可以使用：
+
+NASM
+
+[下载地址](https://www.nasm.us/pub/nasm/releasebuilds/2.14rc15/)
+
+NASN编译完成后生成的是.obj文件，使用link命令可以将.obj文件转换成.exe文件。
+Link是Visual Studio中VC的连接器，如果安装过VC，那么，link就会放在bin目录下。
+
+无论MASM32还是NASM都是一个工具集，这个工具集里面主要包含了一下程序：
+DEBUG.EXE、EDIT.EXE、LINK.EXE、MASM.EXE
+
+我们以单独拿出来这些程序放到汇编程序所在的目录里，这样也可以进行编译。
+
+如图 20180713_01.png
 
