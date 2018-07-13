@@ -50,8 +50,11 @@ MASM32是一个汇编开发工具包。
 	link
 
 如下图所示代表安装成功：
+![](http://wx1.sinaimg.cn/mw690/006CBL8rly1ft81btml4yj30ik0bzjrl.jpg)
 
 20180712_01.png
+
+
 
 除了使用MASM32也可以使用：
 
@@ -67,5 +70,8 @@ DEBUG.EXE、EDIT.EXE、LINK.EXE、MASM.EXE
 
 我们以单独拿出来这些程序放到汇编程序所在的目录里，这样也可以进行编译。
 
-如图 20180713_01.png
+如图:
+![20180713_01.png](http://wx1.sinaimg.cn/mw690/006CBL8rly1ft81bu6ftsj30vs0d03yp.jpg)
+20180713_01.png
+
 
