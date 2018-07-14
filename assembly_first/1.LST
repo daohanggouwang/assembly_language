@@ -1,0 +1,84 @@
+Microsoft (R) Macro Assembler Version 5.00                  7/13/18 14:30:18
+                                                             Page     1-1
+
+
+       1				;Hello World程序  
+       2				              ASSUME    CS:CODE,DS:DATA
+					  
+       3 0000				        DATA  SEGMENT  
+       4 0000  48 45 4C 4C 4F 20 57	              DB        "HELLO WORLD"  
+					         ;存储要显示的数据  
+       5       4F 52 4C 44		
+       6 000B				        DATA  ENDS  
+       7				 
+       8 0000				        CODE  SEGMENT  
+       9 0000				      START:  
+      10 0000  B8 B800			              MOV       AX,0B800H   ;�
+					�存的段地址  
+      11 0003  8E C0			              MOV       ES,AX       ;es
+					做显存段地址  
+      12 0005  B8 ---- R		              MOV       AX,DATA     ;�
+					�标记data的地址给ax  
+      13 0008  8E D8			              MOV       DS,AX       ;ds
+					存储data的段地址  
+      14 000A  BB 0000			              MOV       BX,0        ;bx
+					置零，用作数据段的寻址  
+      15 000D  BF 0000			              MOV       DI,0        ;di
+					用于显存的寻址  
+      16 0010  B9 000B			              MOV       CX,11       ;�
+					�环11次，因为hello world有11个�
+					�符  
+      17				;以下为显示过程  
+      18 0013				          S:  
+      19 0013  8A 07			              MOV       AL,[BX]     ;�
+					�bx指向的内存单元中的数据给
+					al  
+      20 0015  B4 02			              MOV       AH,2        ;�
+					�置绿色字体  
+      21 0017  26: 89 05		              MOV       ES:[DI],AX  ;�
+					�入显存  
+      22 001A  43			              INC       BX          ;bx
+					+1  
+      23 001B  83 C7 02			              ADD       DI,2        ;di
+					+2  
+      24 001E  E2 F3			              LOOP      S            ;�
+					��环执行S   
+      25				                
+      26 0020  B4 01			              MOV       AH,1  
+      27 0022  CD 21			              INT       21H         ;�
+					�用中断暂停，等待键盘输入�
+					�个字节  
+      28 0024  B8 4C00			              MOV       AX,4C00H  
+      29 0027  CD 21			              INT       21H         ;�
+					�用中断退出程序  
+      30 0029				        CODE  ENDS  
+      31				              END       START  
+Microsoft (R) Macro Assembler Version 5.00                  7/13/18 14:30:18
+                                                             Symbols-1
+
+
+Segments and Groups:
+
+                N a m e         	Length	 Align	Combine Class
+
+CODE . . . . . . . . . . . . . .  	0029	PARA	NONE	
+DATA . . . . . . . . . . . . . .  	000B	PARA	NONE	
+
+Symbols:            
+
+                N a m e         	Type	 Value	 Attr
+
+S  . . . . . . . . . . . . . . .  	L NEAR	0013	CODE
+START  . . . . . . . . . . . . .  	L NEAR	0000	CODE
+
+@FILENAME  . . . . . . . . . . .  	TEXT  1		
+
+
+     30 Source  Lines
+     30 Total   Lines
+      6 Symbols
+
+  50538 + 465942 Bytes symbol space free
+
+      0 Warning Errors
+      0 Severe  Errors
